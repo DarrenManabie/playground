@@ -1,0 +1,69 @@
+.guaranteeIcon {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.guaranteeChild {
+  height: 85px;
+  width: 85px;
+  position: relative;
+  display: none;
+}
+.over2Years,
+.warrantyProtection {
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+}
+.over2Years {
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  color: var(--color-gray-3);
+  display: inline-block;
+  min-width: 127px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.feature,
+.guarantee {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+  max-width: 100%;
+}
+.feature {
+  align-self: stretch;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: var(--color-gray-100);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1325px) {
+  .feature {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .warrantyProtection {
+    font-size: var(--font-size-xl);
+    line-height: 30px;
+  }
+  .over2Years {
+    font-size: var(--font-size-base);
+    line-height: 24px;
+  }
+  .guarantee {
+    flex-wrap: wrap;
+  }
+}

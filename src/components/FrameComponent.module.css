@@ -1,0 +1,49 @@
+.trophy1Icon {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.craftedFromTop,
+.highQuality {
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+}
+.craftedFromTop {
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  color: var(--color-gray-3);
+}
+.text,
+.trophy1Parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.trophy1Parent {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-3xs);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: var(--color-gray-100);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 450px) {
+  .highQuality {
+    font-size: var(--font-size-xl);
+    line-height: 30px;
+  }
+  .craftedFromTop {
+    font-size: var(--font-size-base);
+    line-height: 24px;
+  }
+  .trophy1Parent {
+    flex-wrap: wrap;
+  }
+}
